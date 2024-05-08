@@ -1,0 +1,44 @@
+body {
+	height: 100vh;
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+.wrapper__col {
+	background-color: #ccc;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.wrapper__col h2 {
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	font-size: 36px;
+	border-radius: 10px;
+	transition: background-color 0.5s ease;
+	letter-spacing: 3.5px;
+}
+.wrapper__col h2:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper__col button {
+	color: white;
+	font-size: 24px;
+	background-color: transparent;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: background-color 0.5s ease;
+}
+
+.wrapper__col button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
